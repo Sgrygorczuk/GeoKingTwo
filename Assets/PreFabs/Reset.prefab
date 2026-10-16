@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 4713178651439054830}
   - component: {fileID: 103974908450731810}
   m_Layer: 5
-  m_Name: Image (6)
+  m_Name: Block 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -316,7 +316,7 @@ GameObject:
   - component: {fileID: 8044142977639312452}
   - component: {fileID: 36781415191222461}
   m_Layer: 5
-  m_Name: Image (3)
+  m_Name: Block 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -541,7 +541,7 @@ GameObject:
   - component: {fileID: 5018967330096921645}
   - component: {fileID: 3074980831734334976}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Block 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -691,7 +691,7 @@ GameObject:
   - component: {fileID: 4500361194424455356}
   - component: {fileID: 5029758606427194648}
   m_Layer: 5
-  m_Name: Image (7)
+  m_Name: Block 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -766,7 +766,7 @@ GameObject:
   - component: {fileID: 6939659417122304274}
   - component: {fileID: 7640482309306789044}
   m_Layer: 5
-  m_Name: Image (8)
+  m_Name: Block 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -841,7 +841,7 @@ GameObject:
   - component: {fileID: 315477233584313466}
   - component: {fileID: 4239818468887500707}
   m_Layer: 5
-  m_Name: Image (5)
+  m_Name: Block 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -916,7 +916,7 @@ GameObject:
   - component: {fileID: 1243161237621892247}
   - component: {fileID: 2198735359395289181}
   m_Layer: 5
-  m_Name: Image (4)
+  m_Name: Block 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -991,7 +991,7 @@ GameObject:
   - component: {fileID: 3803093787403068163}
   - component: {fileID: 1857096722901576793}
   m_Layer: 5
-  m_Name: Image (9)
+  m_Name: Block 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1066,6 +1066,7 @@ GameObject:
   - component: {fileID: 5500388043726946644}
   - component: {fileID: 2877296862260735758}
   - component: {fileID: 197193027158962447}
+  - component: {fileID: 6265309620246169875}
   m_Layer: 5
   m_Name: Wipe
   m_TagString: Untagged
@@ -1164,6 +1165,38 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6265309620246169875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8391695537932698493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c264d57bffc8464a9bbc68d19755de8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelProgressView
+  blocks:
+  - {fileID: 3074980831734334976}
+  - {fileID: 36781415191222461}
+  - {fileID: 2198735359395289181}
+  - {fileID: 4239818468887500707}
+  - {fileID: 103974908450731810}
+  - {fileID: 5029758606427194648}
+  - {fileID: 7640482309306789044}
+  - {fileID: 1857096722901576793}
+  unlitColor: {r: 0.2264151, g: 0.2264151, b: 0.2264151, a: 1}
+  flashColor: {r: 1, g: 1, b: 1, a: 1}
+  litColor: {r: 0.9, g: 0.9, b: 0.9, a: 1}
+  fadeTime: 0.6
+  shineTime: 0.4
+  combinedShape: {fileID: 7482667652216324306, guid: 1f8d0691710586ab78582e98627aa9ff, type: 3}
+  combinedSize: 300
+  combineTime: 1.5
+  fadeAwayTime: 0.8
+  rowAppearTime: 0.4
+  holdAfter: 0.25
 --- !u!1 &8793726764034193325
 GameObject:
   m_ObjectHideFlags: 0

@@ -31,6 +31,22 @@ public static class SceneObjectCreator
         Finish(go);
     }
 
+    [MenuItem("Tools/Add Camera Zoom Zone")]
+    private static void AddCameraZoomZone()
+    {
+        var go = new GameObject("Camera Zoom Zone");
+        var box = go.AddComponent<BoxCollider2D>();
+        box.isTrigger = true;
+        box.size = new Vector2(10f, 6f);
+        go.AddComponent<CameraZoomZone>();
+
+        var view = SceneView.lastActiveSceneView;
+        if (view != null)
+            go.transform.position = new Vector3(view.pivot.x, view.pivot.y, 0f);
+
+        Finish(go);
+    }
+
     private static void Finish(GameObject go)
     {
         Undo.RegisterCreatedObjectUndo(go, $"Create {go.name}");
